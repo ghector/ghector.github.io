@@ -1,0 +1,22 @@
+<input id="age" placeholder="Give your age" />
+<br/><br/>
+<strong id="monitor"></strong>
+
+<script>
+    let ageEle = document.getElementById("age")
+    let monitor = document.getElementById("monitor")
+
+    ageEle.addEventListener("input",kati)
+
+    function kati(){
+       let ageValue = Number(ageEle.value);
+       if(ageValue>=17){
+          monitor.innerText = "You can vote"
+       }
+       else {
+        monitor.innerText ="You cannot vote"
+       }
+      
+    }
+
+</script>
